@@ -1,0 +1,22 @@
+@import "../../variables.scss";
+
+.HomePage {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: $fw_600;
+  }
+  &__link a {
+    font-size: $fs_bigger;
+    text-transform: uppercase;
+    color: #5863b8;
+    font-weight: $fw_600;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

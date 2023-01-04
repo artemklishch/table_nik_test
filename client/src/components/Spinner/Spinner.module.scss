@@ -1,0 +1,31 @@
+.Spinner {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  &__circle {
+    border-color: grey;
+    border-top-color: lightgrey;
+    border-style: solid;
+    border-radius: 50%;
+    animation: spin 0.3s linear infinite forwards;
+  }
+  div.Spinner__circle[data-size="large"] {
+    height: 50px;
+    width: 50px;
+    border-width: 4px;
+  }
+  div.Spinner__circle[data-size="small"] {
+    height: 25px;
+    width: 25px;
+    border-width: 2px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

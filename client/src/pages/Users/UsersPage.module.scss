@@ -1,0 +1,37 @@
+@import "../../variables.scss";
+
+.UsersPage {
+  padding: 30px;
+  &__goupBtn {
+    position: fixed;
+    right: 20px;
+    top: 30%;
+    padding: 5px 10px;
+    border: none;
+    background-color: #99afe4;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  &__actions {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    button {
+      padding: 20px 40px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      font-size: $commonFontSize;
+      cursor: pointer;
+    }
+    button:active {
+      opacity: 0.8;
+    }
+    &_actionBtn {
+      background-color: #99afe4;
+    }
+    &_deleteBtn {
+      background-color: #ec3307;
+    }
+  }
+}

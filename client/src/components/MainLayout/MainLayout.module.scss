@@ -1,0 +1,73 @@
+@import "../../variables.scss";
+
+.MainLayout {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding-left: 20px;
+    align-items: center;
+    background: linear-gradient(to right, #9fb1a5, #4d5750);
+    color: $white;
+    font-size: $commonFontSize;
+    position: sticky;
+    top: 0;
+    &_logo {
+      height: 80%;
+      cursor: pointer;
+      img {
+        height: 100%;
+      }
+    }
+    &_nav {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      height: 100%;
+      display: flex;
+      li {
+        height: 100%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          height: 100%;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $white;
+          padding: 0 40px;
+          text-decoration: none;
+          &:hover {
+            background-color: #69847e;
+          }
+          &[aria-current="page"] {
+            background-color: #273d38;
+          }
+        }
+      }
+    }
+  }
+  &__main {
+    flex-grow: 1;
+    background: linear-gradient(to right, #e8f2eb, #afecec);
+  }
+  &__footer {
+    background: linear-gradient(to right, #9fb1a5, #4d5750);
+    color: $white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $fs_bigger;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
